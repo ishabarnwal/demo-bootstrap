@@ -6,43 +6,105 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <style>
             body{
-                background-color: rgb(152, 216, 221);
+                background-color: rgb(157, 236, 164);
             }
         </style>
     </head>
     <body>
-        <p class="h1" style = "text-align: center; color:brown">Bootstrap Demo</p>
+        <p class="h1" style = "text-align: center; color:brown">Bootstrap Demo and Grid System</p>
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                    <table class = "table table-hover table-border table-dark">
+                        <thead>
+                    <tr>
+                        <th>Roll no</th>
+                        <th>Name</th>
+                        <th>Duration</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                    <tr class="table-danger">
+                        <td>1</td>
+                        <td>React</td>
+                        <td>3 years</td>
+                        <td>20000</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>2</td>
+                        <td>Angular</td>
+                        <td>4 years</td>
+                        <td>50000</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>3</td>
+                        <td>Bootstrap</td>
+                        <td>3 years</td>
+                        <td>20000</td>
+                    </tr>
+                    <tr class="table-primary">
+                        <td>4</td>
+                        <td>CSS</td>
+                        <td>3 years</td>
+                        <td>45000</td>
+                    </tr>
+                </table>
+            </div>
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <button class="btn btn-outline-danger">Courses Information</button>
+                            </div>
+                    </div>
+                </div>
+                <br>
+        <div>
+            <div class ="row">
+                <div class="col-md-2" style="background-color: blueviolet;">First column</div>
+                <div class="col-md-3" style="background-color: chartreuse;">Second column</div>
+                <div class="col-md-4" style="background-color: crimson;">Third column</div>
+                <div class="col-md-3" style="background-color: darkkhaki;">Fourth column</div>
+            </div>
+        </div>
         <br>
         <div>
             <div class ="row">
-                <div class="col-md-2">First column</div>
-                <div class="col-md-7">Second column</div>
-                <div class="col-md-3">Second column</div>
+                <div class="col-md-5 border border-danger">
+                    <li>Home</li>
+                    <li>Contact</li>
+                    <li>Address</li>
+                </div>
+                <div class="col-md-4" style="background-color: rgb(199, 16, 206);">
+                    <ul>Home</ul>
+                    <ul>Contact</ul>
+                    <ul>Address</ul>
+                </div>
+                <div class="col-md-3 border border-warning"></div>
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-4" style="background-color:yellow;">column</div>
+            <div class="col-sm-1" style="background-color:rgb(0, 255, 76);">column</div>
+            <div class="col-sm-3" style="background-color:rgb(68, 0, 255);">column</div>
+            <div class="col-sm-4" style="background-color:orange;">column</div>
+          </div>
+          <br>
         <div>
             <div class ="row">
-                <div class="col-md-5">First column</div>
-                <div class="col-md-4">Second column</div>
-                <div class="col-md-3">Third column</div>
+                <div class="col-md-1 bg-success">First column</div>
+                <div class="col-md-1 bg-warning">Second column</div>
+                <div class="col-md-1 bg-danger">Third column</div>
+                <div class="col-md-1 bg-success">Forth column</div>
+                <div class="col-md-1 bg-warning">Fifth column</div>
+                <div class="col-md-1 bg-danger">Sixth column</div>
+                <div class="col-md-1 bg-primary">Seventh column</div>
+                <div class="col-md-1 bg-success">Eighth column</div>
+                <div class="col-md-1 bg-info">Ninth column</div>
+                <div class="col-xs-1 bg-danger">Tenth column</div>
+                <div class="col-xs-1 bg-secondary">Eleventh column</div>
+                <div class="col-xs-1 bg-danger">Twelth column</div>
             </div>
-        </div>
-        <div>
-            <div class ="row">
-                <div class="col-md-1">First column</div>
-                <div class="col-md-1">Second column</div>
-                <div class="col-md-1">Third column</div>
-                <div class="col-md-1">Forth column</div>
-                <div class="col-md-1">Fifth column</div>
-                <div class="col-md-1">Sixth column</div>
-                <div class="col-md-1">Seventh column</div>
-                <div class="col-md-1">Eighth column</div>
-                <div class="col-md-1">Ninth column</div>
-                <div class="col-md-1">Tenth column</div>
-                <div class="col-md-1">Eleventh column</div>
-                <div class="col-md-1">Twelth column</div>
-            </div>
-        </div>
+          </div>
         
         <br><br><br>
         <div>
@@ -56,5 +118,15 @@
         <button class="btn btn-link">Click</button>
         <button class="btn btn-danger">Click</button>
     </div>
+    <br>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+      
     </body>
 </html>
